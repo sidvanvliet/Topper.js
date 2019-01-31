@@ -18,6 +18,9 @@ function Topper(...args) {
     duration    = a.duration;
     type        = a.type;
     style       = a.style;
+    autoclose   = a.autoclose;
+    autocloseMs = a.autocloseAfter;
+    style       = a.style;
 
     switch(type) {
         case 'top':
@@ -25,7 +28,7 @@ function Topper(...args) {
             break;
         default:
             console.error('^Topper.js: Unknown type "' + type + '"');
-    } 
+    }
 }
 
 function TopperTop()
@@ -49,6 +52,13 @@ function TopperTop()
 
     $('#'+notifid+' .topper-content').append(prepTitle + prepText);
     $('#'+notifid).append(prepClose);
+
+    if(autoclose == true)
+    {
+        setTimeout(function(){
+            $('#'+notifid).fadeOut(500);
+        }, autocloseMs);
+    }
 }
 
 function fromPool() {

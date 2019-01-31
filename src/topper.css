@@ -9,6 +9,29 @@
     z-index:60009022;
 }
 
+/*  */
+.topper-success{
+    background-color:#2ecc71;
+    color:#fff;
+}
+
+.topper-info{
+    background-color:#3498db;
+    color:#fff;
+}
+
+.topper-warning{
+    background-color:#f39c12;
+    color:#1f1f1f;
+}
+
+.topper-danger{
+    background-color:#e74c3c;
+    color:#fff;
+}
+
+/* Topper-top */
+
 .topper-top .topper-title{
     float:left;
     font-weight:bold;

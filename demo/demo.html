@@ -23,7 +23,7 @@
 
 <body>
 
-    <!-- <div class="topper topper-top topper-success">
+    <!-- <div class="topper topper-corner topper-success">
         <div class="topper-content">
             <div class="topper-title">My Alert</div>
             <div class="topper-text">This is my sample notification.</div>
@@ -36,6 +36,7 @@
             <div class="title m-b-md">
                 <div id="logo"></div>
                 <button id="topper-top">topper-top</button>
+                <button id="topper-top">topper-corner</button>
             </div>
         </div>
     </div>
@@ -49,9 +50,10 @@
                 Topper({
                     title: 'My Alert',
                     text: 'This is my sample notification.',
-                    style: 'success',
+                    style: 'danger',
                     type: 'top',
-                    duration: 2500
+                    autoclose: true,
+                    autocloseAfter: 2500
                 });
 
             });
