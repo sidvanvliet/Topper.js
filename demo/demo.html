@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Topper.js</title>
+
+    <link rel="stylesheet" href="topper.css">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="../src/topper.css">
+
+    </head>
+
+<body>
+
+    <!-- <div class="topper topper-top topper-success">
+        <div class="topper-content">
+            <div class="topper-title">My Alert</div>
+            <div class="topper-text">This is my sample notification.</div>
+        </div>
+        <div class="topper-close">&times;</div>
+    </div> -->
+
+    <div class="flex-center position-ref full-height">
+        <div class="content">
+            <div class="title m-b-md">
+                <div id="logo"></div>
+                <button id="topper-top">topper-top</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../src/topper.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).on('click', '#topper-top', function(){
+
+                Topper({
+                    title: 'My Alert',
+                    text: 'This is my sample notification.',
+                    style: 'success',
+                    type: 'top',
+                    duration: 2500
+                });
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>

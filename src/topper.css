@@ -1,0 +1,43 @@
+.topper-top{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:auto;
+    background-color:#3498db;
+    color:#fff;
+    z-index:60009022;
+}
+
+.topper-top .topper-title{
+    float:left;
+    font-weight:bold;
+}
+
+.topper-top .topper-text{
+    float:left;
+    margin-left:15px;
+}
+
+.topper-top .topper-close{
+    position:absolute;
+    right:25px;
+    top:15px;
+    font-size:28px;
+    cursor:pointer;
+    transition:opacity 200ms ease;
+}
+
+.topper-top .topper-close:hover{
+    opacity:0.7;
+}
+
+.topper-top .topper-content:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.topper-top .topper-content{
+    padding:25px;
+}
